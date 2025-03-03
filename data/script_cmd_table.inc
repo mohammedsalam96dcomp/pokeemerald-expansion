@@ -22,6 +22,7 @@
 	.align 2
 gScriptCmdTable::
 	.endif
+  
 	script_cmd_table_entry SCR_OP_NOP                           ScrCmd_nop,                         requests_effects=1  @ 0x00
 	script_cmd_table_entry SCR_OP_NOP1                          ScrCmd_nop1,                        requests_effects=1  @ 0x01
 	script_cmd_table_entry SCR_OP_END                           ScrCmd_end,                         requests_effects=1  @ 0x02
@@ -251,6 +252,7 @@ gScriptCmdTable::
 	script_cmd_table_entry SCR_OP_BUFFERITEMNAMEPLURAL          ScrCmd_bufferitemnameplural,        requests_effects=1  @ 0xe2
 	script_cmd_table_entry SCR_OP_DYNMULTICHOICE                ScrCmd_dynmultichoice,              requests_effects=1  @ 0xe3
 	script_cmd_table_entry SCR_OP_DYNMULTIPUSH                  ScrCmd_dynmultipush,                requests_effects=1  @ 0xe4
+  script_cmd_table_entry SCR_OP_SETSPEAKER					          ScrCmd_setspeaker,                  requests_effects=1  @ 0xe5
 
 	.if ALLOCATE_SCRIPT_CMD_TABLE
 gScriptCmdTableEnd::
